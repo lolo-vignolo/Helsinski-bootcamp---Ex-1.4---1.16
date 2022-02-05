@@ -2,7 +2,7 @@ import React from 'react';
 
 const Buttons = ({onClick, buttonName }) => {
     return (
-              <button onClick={onClick}>{buttonName}</button>  
+              <button style={{margin:"4px", borderRadius:"70px"}} onClick={onClick}>{buttonName}</button>  
     );
 };
 

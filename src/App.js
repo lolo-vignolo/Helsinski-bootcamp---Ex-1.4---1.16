@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import Anecdotas from './components/Anecdotas';
 import Buttons from './components/Buttons';
 import Statistic from './components/Statistic';
 
@@ -52,7 +53,7 @@ function App() {
           <section>
           <div>
           <h1>Statistics</h1>
-          { total &&  (
+          { sumClick?  (
 
                   <Statistic 
                       good = {good}
@@ -61,13 +62,17 @@ function App() {
                       total = {total}
                       average = {average}
                     />
-          ) 
+          ) : <h3>No feedback Given </h3>
             
             
           }
              
           </div>
-
+          </section>
+          <section>
+            
+              <Anecdotas />
+            
           </section>
 
         

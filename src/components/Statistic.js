@@ -9,7 +9,7 @@ const Statistic = ( {good, neutral, bad, total, average} ) => {
                <li>Neutral {neutral} </li>
                <li>Bad {bad}</li>
                <li><strong>Total:{total} </strong></li>
-               <li><strong>Average: {average?average:0} % </strong></li>
+               <li><strong>Average: {average} % </strong></li>
              </ul>
             
         </>
